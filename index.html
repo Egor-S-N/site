@@ -32,7 +32,7 @@
             tg.expand();
             mario.addEventListener("click", function(event) {
                     event.preventDefault(); 
-                    displayText("Текст для первой картинки");
+                    displayText("Вы выбрали персонажа: Марио, Поздравляю!");
                     let data = {value : 1}
                     tg.sendData(JSON.stringify(data));
                     tg.close();
@@ -41,7 +41,7 @@
                     event.preventDefault(); 
                     let data = {value : 2}
                     tg.sendData(JSON.stringify(data));
-                    displayText("Текст для второй картинки");
+                    displayText("Вы выбрали персонажа: Альберт Эйнштейн, Поздравляю!");
                     tg.close();
                 });
 
