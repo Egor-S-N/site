@@ -33,14 +33,14 @@
             mario.addEventListener("click", function(event) {
                     event.preventDefault(); 
                     displayText("Текст для первой картинки");
-                    data = {value : 1}
-                    tg.sendData(JSON,stringify(data));
+                    let data = {value : 1}
+                    tg.sendData(JSON.stringify(data));
                     tg.close();
                 });
             einstein.addEventListener("click", function(event) {
                     event.preventDefault(); 
-                    data = {value : 2}
-                    tg.sendData(JSON,stringify(data));
+                    let data = {value : 2}
+                    tg.sendData(JSON.stringify(data));
                     displayText("Текст для второй картинки");
                     tg.close();
                 });
@@ -49,7 +49,7 @@
                 alert(text);
             }
 
-            let
+        
         });
     </script>
 </body>
