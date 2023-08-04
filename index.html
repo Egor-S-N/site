@@ -8,19 +8,49 @@
 </head>
 <body>
     <div id="main">
-        <a href="profile1.html">
-            <img class="fi" src="mario.png" alt="Марио">
+        <a id = "mario">
+            <img  class="fi" src="mario.png" alt="Марио">
         </a>
         <h1 class="profile-heading" id="fh">Марио</h1>
         <h1 class="profile-subheading" id="sh">Персонаж</h1>
 
-        <a href="profile2.html">
-            <img class="si" src="mario.png" alt="Марио">
+        <a  id="einstein">
+            <img class="si" src="einstein.png" alt="Марио">
         </a>
-        <h1 class="profile-heading" id="fh">Марио</h1>
-        <h1 class="profile-subheading" id="sh">Персонаж</h1>
+        <h1 class="profile-heading" id="fh">Альберт Эйнштейн</h1>
+        <h1 class="profile-subheading" id="sh">Физик-теоретик</h1>
     </div>
 
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var tg = window.Telegram.WebApp;
+            var mario = document.getElementById("mario");
+            var einstein = document.getElementById("einstein");
+            var value = 0;
+            
+            tg.expand();
+
+            mario.addEventListener("click", function(event) {
+                    event.preventDefault(); 
+                    displayText("Текст для первой картинки");
+                    value = 1;
+                    tg.close();
+                });
+            einstein.addEventListener("click", function(event) {
+                    event.preventDefault(); 
+                    value = 2;
+                    displayText("Текст для второй картинки");
+                    tg.close();
+                });
+
+            function displayText(text) {
+                alert(text);
+            }
+
+            let
+        });
+    </script>
 </body>
 </html>
