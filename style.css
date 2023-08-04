@@ -1,16 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-weight: 200;
     color: var(--tg-theme-text-color);
     background: var(--tg-theme-bg-color);
 }
 
-#main{
+#main {
     width: 100%;
     max-width: 1080px;
     margin: 0 auto;
@@ -18,24 +18,25 @@ body{
     text-align: center;
 }
 
-.profile-heading{
-    margin-top: 30px;
-    font: normal normal bold 40px/48px SF Pro;
+.profile-heading {
+    margin-top: 20px;
+    font: normal normal bold 32px/40px SF Pro;
     letter-spacing: 0px;
     color: #27A7E7;
 }
 
-.profile-subheading{
+.profile-subheading {
     margin-top: 10px;
-    font: normal normal 300 40px/48px SF Pro;
+    font: normal normal 300 24px/32px SF Pro;
     letter-spacing: 0px;
     color: #27A7E7;
 }
 
-.fi, .si{
+.fi,
+.si {
     margin-top: 20px;
     width: 100%;
-    max-width: 392px;
+    max-width: 200px;
     height: auto;
     display: block;
     margin: 0 auto;
