@@ -28,19 +28,18 @@
             var tg = window.Telegram.WebApp;
             var mario = document.getElementById("mario");
             var einstein = document.getElementById("einstein");
-            var value = 0;
             
             tg.expand();
-
             mario.addEventListener("click", function(event) {
                     event.preventDefault(); 
                     displayText("Текст для первой картинки");
-                    value = 1;
+                    tg.sendData(JSON,stringify(1));
                     tg.close();
                 });
             einstein.addEventListener("click", function(event) {
                     event.preventDefault(); 
                     value = 2;
+                    tg.sendData(JSON,stringify(2));
                     displayText("Текст для второй картинки");
                     tg.close();
                 });
